@@ -1,14 +1,10 @@
-import type { Todo } from '@/types/todo';
+import { TodosAPI } from '@/api/todos';
 
 // Example query for fetching todos
 export const todosQuery = () => ({
   queryKey: ['todos'],
-  queryFn: async (): Promise<Todo[]> => {
-    const response = await fetch('https://jsonplaceholder.typicode.com/todos?_limit=5');
-    if (!response.ok) {
-      throw new Error('Network response was not ok');
-    }
-    return response.json();
-  },
+  queryFn: () => TodosAPI.getTodos(),
   retry: false,
+  staleTime: 5 * 60 * 1000, // Data considered fresh for 5 minutes
+  cacheTime: 10 * 60 * 1000, // Cache data for 10 minutes
 });
