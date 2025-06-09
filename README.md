@@ -22,6 +22,9 @@ This means you can import files using `@/components/Example` instead of relative
 
 ```
 src/
+|-- api/              # API configurations and services
+|   |-- axios.ts      # Axios instance and interceptors
+|   |-- todos.ts      # Todo-related API calls
 |-- assets/            # Static assets
 |   |-- react.svg
 |-- components/        # Reusable UI components
