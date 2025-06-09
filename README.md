@@ -13,43 +13,45 @@ A modern, feature-rich React template built with the latest technologies for sca
 - **[Zustand](https://zustand-demo.pmnd.rs/)** - Bear necessities for state management
 - **[ESLint](https://eslint.org/)** & **[Prettier](https://prettier.io/)** - Code quality and formatting
 
-## 📁 Template Structure
+## 📁 Folder Structure
 
 ### Absolute Imports
 
 This template is configured with absolute imports using the `@` alias that points to the `src` directory.
 This means you can import files using `@/components/Example` instead of relative paths like `../../components/Example`.
 
+```
 src/
-├── assets/ # Static assets
-│ └── react.svg
-├── components/ # Reusable UI components
-│ └── example/
-│ └── example.tsx
-├── hooks/ # Custom React hooks
-│ └── useCopyToClipboard.ts
-├── layouts/ # Layout components
-│ └── MainLayout.tsx
-├── pages/ # Route pages
-│ ├── error/
-│ └── home/
-│ ├── Home.css
-│ └── Home.tsx
-├── queries/ # TanStack Query configurations
-│ └── queries.ts
-├── router/ # React Router setup
-│ └── router.tsx
-├── stores/ # Zustand store definitions
-│ └── appStore.ts
-├── types/ # TypeScript type definitions
-│ └── todo.ts
-├── utils/ # Utility functions
-│ └── constants.ts
-├── App.css
-├── App.tsx
-├── index.css
-├── main.tsx
-└── vite-env.d.ts
+|-- assets/            # Static assets
+|   |-- react.svg
+|-- components/        # Reusable UI components
+|   |-- example/
+|   |   |-- example.tsx
+|-- hooks/            # Custom React hooks
+|   |-- useCopyToClipboard.ts
+|-- layouts/          # Layout components
+|   |-- MainLayout.tsx
+|-- pages/            # Route pages
+|   |-- error/
+|   |-- home/
+|       |-- Home.css
+|       |-- Home.tsx
+|-- queries/          # TanStack Query configurations
+|   |-- queries.ts
+|-- router/           # React Router setup
+|   |-- router.tsx
+|-- stores/           # Zustand store definitions
+|   |-- appStore.ts
+|-- types/            # TypeScript type definitions
+|   |-- todo.ts
+|-- utils/            # Utility functions
+|   |-- constants.ts
+|-- App.css
+|-- App.tsx
+|-- index.css
+|-- main.tsx
+|-- vite-env.d.ts
+```
 
 ## Expanding the ESLint configuration
 
