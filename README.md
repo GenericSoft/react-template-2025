@@ -13,6 +13,40 @@ A modern, feature-rich React template built with the latest technologies for sca
 - **[Zustand](https://zustand-demo.pmnd.rs/)** - Bear necessities for state management
 - **[ESLint](https://eslint.org/)** & **[Prettier](https://prettier.io/)** - Code quality and formatting
 
+## 🔧 Required Extensions
+
+For the best development experience, please install the following VS Code extensions:
+
+- **ESLint** ([dbaeumer.vscode-eslint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)) - Real-time linting
+- **Prettier** ([esbenp.prettier-vscode](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)) - Code formatting
+
+Note: While ESLint will still work through the command line (`npm run lint`) and during builds without the extension, the VS Code extension provides:
+
+- Real-time error and warning highlighting
+- Quick-fix suggestions
+- Auto-fix on save (when configured)
+- Better developer experience
+
+### VS Code Settings
+
+Add these settings to your VS Code `settings.json` for the best experience:
+
+```json
+{
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
+}
+```
+
+These settings will:
+
+- Auto-fix ESLint issues on save
+- Format your code with Prettier on save
+- Set Prettier as the default formatter
+
 ## 📁 Folder Structure
 
 ### Absolute Imports
